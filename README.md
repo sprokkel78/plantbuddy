@@ -1,7 +1,7 @@
 # PlantBuddy
 
 
-This PHP-based application is designed to track the complete growth lifecycle of a plant — from seed to flowering and harvest/end stage. It allows users to record and monitor key growth data using dates, making it suitable for any plant type, including vegetables, fruits, herbs, trees, and ornamental plants.
+This PHP-based application is designed to track the complete growth lifecycle of a plant — from seed to flowering and harvest/end stage. It allows users to record and monitor key growth data using dates, making it suitable for any plant type, including vegetables, fruits, trees, and ornamental plants.
 
 The system provides structured tracking of:
 

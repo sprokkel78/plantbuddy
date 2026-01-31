@@ -1,0 +1,29 @@
+<?php
+    $timer = date('Y/m/d');
+?>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <br>
+    <div style="width: 98%; font-size: 22; margin: 0 auto; padding: 10px; border: 2px solid #000; color: #f60; background-color: #000;">
+            PlantBuddy v1.0 -> Current Date : <?php echo $timer; ?>
+    </div>
+    <div class='top-image' style="width:98%; margin: 0 auto; padding: 10px; background-color: #fff; border: 2px solid #000;">
+    <h1><a href="index.php"><img src="top-image.png"></img></a></h1>
+    </div>
+
+    <div style="display: flex; align: left; padding: 5px;">
+        <div style="width:60px; padding: 10px; background-color: #fff; border: 2px solid #000;">
+            <a href="index.php">Home</a>
+        </div>
+        <div style="width:150px; padding: 10px; background-color: #fff; border: 2px solid #000;">
+            <a href="add_plant.php">Plant Controller</a>
+        </div>
+        <div style="width:190px; padding: 10px; background-color: #fff; border: 2px solid #000;">
+            <a href="add_nutrients.php">Nutrients Controller</a>
+        </div>
+    </div>
+
+    <br>
