@@ -56,7 +56,7 @@
 
             if ($days < $vdays) {
                 $stage = "Seedling for " . $days . " days.";
-            } elseif ($days < $fdays) {
+            } elseif ($days <= $fdays) {
                 $tot = $days - $vdays + 1;
                 $stage = "Vegetative for " . $tot . " days.";
             } else {
