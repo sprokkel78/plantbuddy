@@ -60,7 +60,7 @@
                 $tot = $days - $vdays + 1;
                 $stage = "Vegetative for " . $tot . " days.";
             } else {
-                $tot = $days - $fdays + 1;
+                $tot = $days - $fdays;
                 $stage = "Flowering for " . $tot . " days.";
             }
 
