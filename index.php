@@ -74,6 +74,10 @@
 	    } else {
 		$procent = (100/$tdays)*$days;
 		$procent = round($procent, 0);
+
+		if($procent > 100) {
+			$procent = 100;
+		}
 	    }
             }
 
