@@ -192,8 +192,11 @@
                 print("<input type=\"hidden\" name=\"file\" value=\"$file\"></input>");
                 print("<input type=\"hidden\" name=\"pName\" value=\"$pName[1]\"></input>");
                 print("<input type=\"hidden\" name=\"pStrain\" value=\"$pStrain[1]\"></input>");
-                print("&nbsp;<button type=\"submit\">Water Plant</button></form></div>");
-
+                if(!isset($_POST['log'])) {
+			print("&nbsp;<button type=\"submit\">Water Plant</button></form></div>");
+		} else {
+			echo "</form></div>";
+		}
             ?>
 
 	</div>
@@ -222,7 +225,11 @@
                  print("<form action=\"water_plant.php\" method=\"post\">");
                  print("<input type=\"hidden\" name=\"file\" value=\"$file\"></input>");
                  print("<input type=\"hidden\" name=\"numb\" value=\"$numb\"></input>");
-                 print("<br><button type=\"submit\">Delete Watering</button></form>");
+                	 if(!isset($_POST['log'])) {
+		 		print("<br><button type=\"submit\">Delete Watering</button></form>");
+			 } else {
+				echo "<br></form>";
+			 }
                  }
                  $z++;
             }

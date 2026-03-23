@@ -119,8 +119,13 @@
             echo "&nbsp;Total Liters water used : " . $total . " L";
             echo "<br><br>";
 
-            ?>&nbsp;<button type="submit">Water Plant</button></form><?php
-            echo "</div><br>";
+	    if($procent != 100) {
+            	echo "&nbsp;<button type=\"submit\">Water Plant</button></form>";
+            } else {
+		echo "<input type=\"hidden\" name=\"log\" value=\"1\">";
+            	echo "&nbsp;<button type=\"submit\">Water Log</button></form>";
+	    }
+	    echo "</div><br>";
         }
     }
 ?>
