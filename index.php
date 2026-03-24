@@ -110,9 +110,11 @@
             echo "&nbsp;$result[4]<br>";
             echo "&nbsp;$result[5]<br>";
             echo "&nbsp;$result[6]<br><br>";
+	    if ($procent != 100) {
             echo "&nbsp;This plant is $days days in.<br>";
             echo "&nbsp;Growing Stage : " . $stage . "<br>";
-            echo "&nbsp;Completed : " . $procent . "% done.<br><br>";
+            }
+	    echo "&nbsp;Completed : " . $procent . "% done.<br><br>";
             echo "&nbsp;Last Watering : <br>";
             echo "$lastLine";
             echo "<br>";
