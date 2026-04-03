@@ -29,7 +29,7 @@
 	    $now = new DateTime();
 
             if ($dateToCheck > $now) {
-                echo "This Seed Date is in the future";
+                echo "This Seed Date is in the future<br><br>";
 		$days = "";
 		$stage = "";
 		$procent = "";
