@@ -7,7 +7,7 @@
 </head>
 <body>
     <br>
-    <div style="width: 98%; font-size: 22; margin: 0 auto; padding: 10px; border: 2px solid #000; color: #f60; background-color: #000;">
+    <div style="width: 98%; font-size: 22; margin: 0 auto; padding: 10px; border: 2px solid #000; color: #f30; background-color: #000;">
             PlantBuddy v1.0 -> Current Date : <?php echo $timer; ?>
     </div>
     <div class='top-image' style="width:98%; margin: 0 auto; padding: 10px; background-color: #fff; border: 2px solid #000;">
