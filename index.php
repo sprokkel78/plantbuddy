@@ -115,7 +115,6 @@
             echo "&nbsp;Growing Stage : " . $stage . "<br>";
             }
 	    echo "&nbsp;Completed : " . $procent . "% done.<br><br>";
-	    if ($procent == 100) {
             	$start = new DateTime($sDate);
             	$end = new DateTime($VSDate);
             	$diff = $start->diff($end);
@@ -131,7 +130,6 @@
             	$diff = $start->diff($end);
             	$tdays = ($diff->days);
 	    	echo "&nbsp;Total Flowering Days: $tdays<br><br>";
-	    }
             echo "&nbsp;Last Watering : <br>";
             echo "$lastLine";
             echo "<br>";
