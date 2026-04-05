@@ -206,6 +206,7 @@
 
         if (file_exists($filename)) {
             //echo "OK";
+	    echo "<br>";
             echo "<div class=\"nutrientfile\" style=\"width:98%; margin: 0 auto; padding: 10px; background-color: #fff; border: 2px solid #000;\"><br>";
             //echo $filename;
             $lines = file($filename);
