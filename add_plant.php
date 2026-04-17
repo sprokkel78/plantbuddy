@@ -226,7 +226,7 @@
     $dir = 'plants/';
 
     $files = array_diff(scandir($dir), ['.', '..']);
-    rsort($files); // descending
+    //rsort($files); // descending
 
     foreach ($files as $file) {
         $path = $dir . $file;
@@ -241,6 +241,32 @@
             echo "$result[4]<br>";
             echo "$result[5]<br>";
             echo "$result[6]<br><br>";
+
+            $pSDate = explode(':', $result[3]); $sDate = $pSDate[1];
+            $sDate = ltrim($sDate);
+            $pVSDate = explode(':', $result[4]); $VSDate = $pVSDate[1];
+            $VSDate = ltrim($VSDate);
+            $pFSDate = explode(':', $result[5]); $FSDate = $pFSDate[1];
+            $FSDate = ltrim($FSDate);
+            $pFEDate = explode(':', $result[6]); $FEDate = $pFEDate[1];
+            $FEDate = ltrim($FEDate);
+
+                $start = new DateTime($sDate);
+                $end = new DateTime($VSDate);
+                $diff = $start->diff($end);
+                $tdays = ($diff->days);
+                echo "Total Seedling Days: $tdays<br>";
+                $start = new DateTime($VSDate);
+                $end = new DateTime($FSDate);
+                $diff = $start->diff($end);
+                $tdays = ($diff->days);
+                echo "Total Vegetative Days: $tdays<br>";
+                $start = new DateTime($FSDate);
+                $end = new DateTime($FEDate);
+                $diff = $start->diff($end);
+                $tdays = ($diff->days);
+                echo "Total Flowering Days: $tdays<br><br>";
+
             // EDIT PLANT BUTTON
             print("<form action=\"add_plant.php\" method=\"post\">
                 <input type=\"hidden\" name=\"edit\" value=\"1\">
