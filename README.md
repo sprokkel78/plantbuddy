@@ -52,3 +52,4 @@ After this the directories should be writable and the app should work.
 
 Enjoy!
 
+Made with love for mother nature.
