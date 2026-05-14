@@ -54,6 +54,6 @@ Enjoy!
 
 Made with love for mother nature. (Sia - Queen)
 
-Note:  language:Hack is a programming language and I've no idea of where I'm using it in the code.
+Note:  language:Hack is a programming language and I've no idea of where I'm using it in the code. If anyone knows, please let me know.
 
 Note: You can do whole crops with the app just by changing the plant-name into grow-name. Just multiply the results by the number of plants.
